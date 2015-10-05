@@ -44,7 +44,7 @@ hr('Using For Other');
 print_r($arr1);
 echo "<br/>";
 hr('Using For Other');
-$json = json_encode($arr1,JSON_UNESCAPED_UNICODE | JSON_FORCE_OBJECT);
+$json = json_encode($arr1,JSON_UNESCAPED_UNICODE);
 hr('JSON Start');
 echo $json;
 hr('JSON End');
