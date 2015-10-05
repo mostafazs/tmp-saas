@@ -54,7 +54,7 @@ hr('JSON End');
 <script type="text/javascript">
 var json = '<?php echo $json; ?>';
 console.log(json);
-var json = JSON.stringify(json);
+//var json = JSON.stringify(json);
 var json = JSON.parse(json);
 console.log(json);
 </script>
