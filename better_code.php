@@ -43,12 +43,12 @@ for($i=1;$i<count($exp1);$i++){
 }	
 hr('Using For OK');
 hr('Using For Other');
-print_r($arr1);
+//print_r($arr1);
 echo "<br/>";
 hr('Using For Other');
 $json = json_encode($arr1,JSON_ESCAPED_UNICODE);
 hr('JSON Start');
-echo $json;
+//echo $json;
 hr('JSON End');
 //$json = json_encode($result);
 //echo $json;
