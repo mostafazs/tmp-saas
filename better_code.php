@@ -17,16 +17,16 @@ $arr3 = array();
 $arr4 = array();
 $exp1 = explode("\n",$contents);
 hr("Start");
-foreach($exp1 as $a){echo $a."<br/>";}"<br/>";
+//foreach($exp1 as $a){echo $a."<br/>";}"<br/>";
 hr('End');
 hr("Using for");
-for($i=0;$i<count($exp1);$i++){echo $exp1[$i]."<br/>";}
+//for($i=0;$i<count($exp1);$i++){echo $exp1[$i]."<br/>";}
 hr('Using For');
 
 hr("Using for OK");
 for($i=1;$i<count($exp1);$i++){
 	$values = explode(",",$exp1[$i]);
-	echo $exp1[$i]."<br/>";
+	//echo $exp1[$i]."<br/>";
 	$values = array(
 	"Desc" => $values[0],
 	"Amount" => $values[1],
