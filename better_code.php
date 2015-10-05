@@ -56,7 +56,7 @@ var json = '<?php echo $json; ?>';
 console.log(json);
 //var json = JSON.stringify(json);
 var json = JSON.parse(json);
-console.log(json);
+console.log(json[0].Desc);
 </script>
 
 
