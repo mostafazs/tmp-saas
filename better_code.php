@@ -7,8 +7,10 @@
 <body>
 
 <?
-$fh = fopen("./InEx-EN-NoLine.csv","r");
-$contents = fread($fh, filesize("./InEx-EN-NoLine.csv"));
+//$fh = fopen("./InEx-EN-NoLine.csv","r");
+$fh = fopen("./InEx-Main.csv","r");
+//$contents = fread($fh, filesize("./InEx-EN-NoLine.csv"));
+$contents = fread($fh, filesize("./InEx-Main.csv"));
 $arr1 = array();
 $arr2 = array();
 $arr3 = array();
