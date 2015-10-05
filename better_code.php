@@ -1,5 +1,5 @@
 <?php function hr($value){echo "<hr/>".$value."<hr/>";} ?>
-
+<!DOCTYPE HTML>
 <html>
 <head><title>CSV-JSON Better Code</title>
 <meta charset="UTF-8"/>
@@ -44,7 +44,7 @@ hr('Using For Other');
 print_r($arr1);
 echo "<br/>";
 hr('Using For Other');
-$json = json_encode($arr1,JSON_UNESCAPED_UNICODE);
+$json = json_encode($arr1,JSON_UNESCAPED_UNICODE | JSON_FORCE_OBJECT);
 hr('JSON Start');
 echo $json;
 hr('JSON End');
