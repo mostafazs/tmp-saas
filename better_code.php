@@ -46,7 +46,7 @@ hr('Using For Other');
 //print_r($arr1);
 echo "<br/>";
 hr('Using For Other');
-$json = json_encode($arr1,JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+$json = json_encode($arr1,JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP);
 hr('JSON Start');
 //echo $json;
 hr('JSON End');
