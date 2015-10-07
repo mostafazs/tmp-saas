@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 </head>
 <body>
-<div id="content"></div>
+
 <?
 //$fh = fopen("./InEx-EN-NoLine.csv","r");
 $fh = fopen("./InEx-Main.csv","r");
@@ -53,21 +53,16 @@ hr('JSON End');
 //$json = json_encode($result);
 //echo $json;
 ?>
+<div id="content"></div>
 <script type="text/javascript">
-var json = '<?php echo $json; ?>';
-console.log(json);
+var jsonMain = '<?php echo $json; ?>';
+console.log(jsonMain);
 //var json = JSON.stringify(json);
-var json = JSON.parse(json);
+var json = JSON.parse(jsonMain);
 console.log(json[0].Desc);
-</script>
 
-
-
-
-
-<script type="text/javascript">
 //create downloadable json file from json data
-var json = JSON.stringify(json);
+var json = JSON.stringify(jsonMain);
 var blob = new Blob([json], {type: "application/json"});
 var url  = URL.createObjectURL(blob);
 
