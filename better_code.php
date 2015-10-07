@@ -62,7 +62,7 @@ var json = JSON.parse(jsonMain);
 console.log(json[0].Desc);
 
 //create downloadable json file from json data
-var json = JSON.stringify(jsonMain);
+//var json = JSON.stringify(jsonMain);
 var blob = new Blob([json], {type: "application/json"});
 var url  = URL.createObjectURL(blob);
 
