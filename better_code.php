@@ -70,6 +70,7 @@ var a = document.createElement('a');
 a.download    = "backup.json";
 a.href        = url;
 a.textContent = "Download backup.json";
+document.getElementById('content').appendChild(a);
 
 </script>
 </body>
