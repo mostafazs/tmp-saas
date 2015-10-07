@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 </head>
 <body>
-
+<div id="content"></div>
 <?
 //$fh = fopen("./InEx-EN-NoLine.csv","r");
 $fh = fopen("./InEx-Main.csv","r");
@@ -46,7 +46,7 @@ hr('Using For Other');
 //print_r($arr1);
 echo "<br/>";
 hr('Using For Other');
-$json = json_encode($arr1,JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP);
+$json = json_encode($arr1,JSON_UNESCAPED_UNICODE);
 hr('JSON Start');
 //echo $json;
 hr('JSON End');
@@ -65,6 +65,17 @@ console.log(json[0].Desc);
 
 
 
+<script type="text/javascript">
+//create downloadable json file from json data
+var json = JSON.stringify(json);
+var blob = new Blob([json], {type: "application/json"});
+var url  = URL.createObjectURL(blob);
 
+var a = document.createElement('a');
+a.download    = "backup.json";
+a.href        = url;
+a.textContent = "Download backup.json";
+
+</script>
 </body>
 </html>
